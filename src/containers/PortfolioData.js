@@ -1,4 +1,4 @@
-import { LinkedIn } from "@material-ui/icons";
+
 
 const skillSection = {
 
