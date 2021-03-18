@@ -3,12 +3,12 @@ import styled from "styled-components";
 import {
     Link
 } from "react-router-dom";
-import { useMediaQuery } from "react-responsive";
+
 
 
 function Header() {
 
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' })
+    
 
     return (
         <Container>
