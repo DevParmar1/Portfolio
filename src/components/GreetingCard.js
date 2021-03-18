@@ -30,10 +30,10 @@ display:flex;
 align-items:center;
 justify-content:center;
 
-${'' /* @media (max-width : 768px){
+@media (max-width : 768px){
     display:block;
  
-} */}
+}
 
 `
 const Animation = styled.div`

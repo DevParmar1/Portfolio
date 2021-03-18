@@ -29,11 +29,11 @@ display:flex;
 align-items:center;
 justify-content:center;
 padding-top:10rem;
-padding-bottom:5rem;
+padding-bottom:2rem;
 
-${'' /* @media (max-width:768px){
+@media (max-width:768px){
     display:block;
-} */}
+}
 
 `
 const Animation = styled.div`

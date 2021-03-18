@@ -1,48 +1,76 @@
 import React from 'react'
+import { createBrowserHistory } from 'history';
 import styled from "styled-components";
-import {
-    Link
-} from "react-router-dom";
+
 
 
 
 function Header() {
-
     
+    var history = createBrowserHistory({
+        forceRefresh: true
+       });
+     
+      const routeChange1 = () =>{ 
+        console.log("yes clicked");
+    
+      history.push("/");
+      }
+      
+      const routeChange2 = () =>{ 
+        console.log("yes clicked");
+        
+        
+        history.push("/projects");
+      }
+      
+      const routeChange3 = () =>{ 
+        console.log("yes clicked");
+         
+        
+        history.push("/about");
+      }
+    
+     
+    
+     
+    return(
+     
+        
+    
+      
+          <HeaderContainer>
+          <Name>
+              Dev Parmar
+      </Name>
+          <Nav>
+              
+    
+                  <div>
+                      <nav>
+                          <ul>
+                              <li onClick={routeChange1}>Home</li>
+                              <li onClick={routeChange2}>Projects</li>
+                              <li onClick={routeChange3}>About</li>
+                          </ul>
+                      </nav>
+    
+                      
+    
+    
+                      {/* A <Switch> looks through its children <Route>s and
+          renders the first one that matches the current URL. */}
+                     
+                  </div>
+              
+          </Nav>
+      </HeaderContainer>
+    );
 
-    return (
-        <Container>
-            <Name>
-                Dev Parmar
-        </Name>
-            <Nav>
-                
+    }
+export default Header;
 
-                    <div>
-                        <nav>
-                            <ul>
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/project">Project</Link></li>
-                                <li><Link to="/about">About</Link></li>
-                            </ul>
-                        </nav>
-
-                        
-
-
-                        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-                       
-                    </div>
-                
-            </Nav>
-        </Container>
-    )
-}
-
-export default Header
-
-const Container = styled.div`
+const HeaderContainer = styled.div`
 display:flex;
 align-items:center;
 position:relative;
@@ -50,9 +78,9 @@ right:1;
 background:orange;
 
 position: fixed;
-  top: ;
-  width: 100% ;
- 
+top: ;
+width: 100% ;
+
 `
 const Name = styled.div`
 padding-left:10px;
@@ -60,9 +88,9 @@ padding-top:16px;
 padding-bottom:16px;
 
 ${'' /* @media (min-width: 768px) {
-    font-weight:bold;
-    font-size:40px;
-  } */}
+  font-weight:bold;
+  font-size:40px;
+} */}
 `
 const Nav = styled.div`
 position:absolute;
@@ -70,31 +98,31 @@ right:0;
 padding-right:50px;
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display:flex;
+list-style-type: none;
+margin: 0;
+padding: 0;
+display:flex;
 }
 
 li{
-    display:flex;
-    padding-right:32px;
-    
+  display:flex;
+  padding-right:32px;
+  cursor:pointer;
 
-    ${'' /* @media (min-width: 768px) {
-    font-weight:bold;
-    font-size:40px;
-  } */}
+  :hover{
+      color:white;
+  }
+
+  ${'' /* @media (min-width: 768px) {
+  font-weight:bold;
+  font-size:40px;
+} */}
 }
 
 a {
-  color: inherit; /* blue colors for links too */
-  text-decoration: inherit; /* no underline */
+color: inherit; /* blue colors for links too */
+text-decoration: inherit; /* no underline */
 }
 
 
 `
-
-
-
-

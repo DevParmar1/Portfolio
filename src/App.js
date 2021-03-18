@@ -1,36 +1,38 @@
 import React from "react";
-import styled from "styled-components";
-
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route
+  BrowserRouter,Switch,Route
 } from "react-router-dom";
-import Home from "./containers/Home";
-import About from "./containers/About";
-import Project from "./containers/Project";
+import { useHistory } from "react-router-dom";
+import { withRouter } from "react-router-dom";
+
 import Header from "./containers/Header";
+import styled from "styled-components";
+import About from "./containers/About";
+import Home from "./containers/Home";
+import Project from "./containers/Project";
+
+
 
 function App() {
-  return (
-    <Container>
-      <Router>
-        <Header />
 
+   return(
+     <Container>
+     <Header />
+<BrowserRouter>
         <Switch>
-          <Route exact path="/about" component={About} />
+          <Route exact path="/about" component={withRouter(About)} />
 
 
-          <Route exact path="/project" component={Project} />
+          <Route exact path="/project" component={withRouter(Project)} />
 
 
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={withRouter(Home)} />
 
 
         </Switch>
 
   
-      </Router>
+      </BrowserRouter>
     </Container>
 
   );
@@ -54,3 +56,7 @@ grid-template-rows:64px auto min-content;
 // const Footer = styled.div`
 // background:black
 // `
+
+
+
+

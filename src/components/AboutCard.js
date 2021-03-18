@@ -30,10 +30,10 @@ width:80%;
 height:auto;
 padding-top:4rem;
 padding-left:6rem;
-${'' /* @media (max-width : 768px){
+@media (max-width : 768px){
     display:block;
  
-} */}
+}
 
 `
 const Animation = styled.div`

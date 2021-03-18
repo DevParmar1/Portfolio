@@ -1,6 +1,8 @@
+import { LinkedIn } from "@material-ui/icons";
+
 const skillSection = {
 
-softwareSkills: [
+  softwareSkills: [
     {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
@@ -44,4 +46,30 @@ softwareSkills: [
   ]
 };
 
+const contactSection = {
+  ContactData: [
+    {
+      name: "LinkedIn",
+      class: "fab fa-linkedin",
+      href: "https://www.linkedin.com/in/dev-p-118583b3"
+    },
+    {
+      name: "GitHub",
+      class: "fab fa-github",
+      href: ""
+    },
+    {
+      name: "facebook",
+      class: "fab fa-facebook",
+      href: ""
+    },
+    {
+      name: "instagram",
+      class: "fab fa-instagram",
+       href: ""
+    }
+  ]
+};
+
 export default skillSection;
+export { contactSection };
