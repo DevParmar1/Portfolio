@@ -1,8 +1,7 @@
-import React from 'react'
+import React from 'react';
 import styled from "styled-components";
-import DisplayLottie from "../components/displayLottie/DisplayLottie";
 import skills from "../assets/lottie/skills.json";
-import coding from "../assets/lottie/CodingPerson.json";
+import DisplayLottie from "../components/displayLottie/DisplayLottie";
 import SkillCard from "../components/SkillCard";
 
 function Skill() {

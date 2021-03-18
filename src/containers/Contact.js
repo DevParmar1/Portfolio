@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 import styled from "styled-components";
-import DisplayLottie from "../components/displayLottie/DisplayLottie";
-import hello from "../assets/lottie/hello.json";
 
 function Contact() {
     return (

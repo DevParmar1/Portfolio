@@ -1,8 +1,5 @@
-import React from 'react'
-import Header from "./Header";
-import DisplayLottie from "../components/displayLottie/DisplayLottie";
+import React from 'react';
 import styled from "styled-components";
-import page from "../assets/lottie/page.json";
 import AboutCard from "../components/AboutCard";
 
 

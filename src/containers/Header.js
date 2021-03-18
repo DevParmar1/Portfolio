@@ -1,17 +1,13 @@
-import React from 'react'
-import styled from "styled-components";
+import React from 'react';
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
+    BrowserRouter as Link
 } from "react-router-dom";
-import { useMediaQuery } from "react-responsive";
+import styled from "styled-components";
 
 
 function Header() {
 
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' })
+    
 
     return (
         <Container>

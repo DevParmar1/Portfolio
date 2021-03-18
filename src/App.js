@@ -4,8 +4,7 @@ import styled from "styled-components";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Home from "./containers/Home";
 import About from "./containers/About";

@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 import styled from "styled-components";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import skillSection from "../containers/PortfolioData";
 
 function SkillCard() {
