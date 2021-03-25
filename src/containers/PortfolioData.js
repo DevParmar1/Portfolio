@@ -71,5 +71,34 @@ const contactSection = {
   ]
 };
 
+const projectSection = {
+  Data: [
+    {
+      name: "LinkedIn",
+      desc: "fab fa-linkedin",
+      class: "fab fa-github",
+      link: "https://www.linkedin.com/in/dev-p-118583b3"
+    },
+    {
+      name: "LinkedIn",
+      desc: "fab fa-linkedin",
+      class: "fab fa-github",
+      link: "https://www.linkedin.com/in/dev-p-118583b3"
+    },
+    {
+      name: "LinkedIn",
+      desc: "fab fa-linkedin",
+      class: "fab fa-github",
+      link: "https://www.linkedin.com/in/dev-p-118583b3"
+    },
+    {
+      name: "LinkedIn",
+      desc: "fab fa-linkedin",
+      class: "fab fa-github",
+      link: "https://www.linkedin.com/in/dev-p-118583b3"
+    }
+  ]
+};
+
 export default skillSection;
-export { contactSection };
+export { contactSection, projectSection };

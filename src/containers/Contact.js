@@ -55,7 +55,7 @@ function Contact() {
           </Animation>
           <GreetingText>
             <h1>Contact Me!</h1>
-            <p><i class="fas fa-phone-alt"></i> +91-910441107</p>
+            <p><i class="fas fa-phone-alt"></i> +91-91044110</p>
             <p>@devparmar37@gmail.com</p>
             {
             contactSection.ContactData.map((skills,i)=>{
@@ -111,6 +111,7 @@ width:80%;
     display:block;
     padding-left:0;
     padding-top:0;
+    
 }
 
 `
@@ -149,6 +150,7 @@ li{
       text-decoration: none;
       color: inherit;
       cursor:pointer;
+      
  }
 }
 }
@@ -168,6 +170,12 @@ padding-bottom:9rem;
 const Icons = styled.div`
 display:inline-block;
 
+ul{
+  @media(max-width:768px){
+    padding-left:0;
+  }
+}
+
 li{
     list-style:none;
    
@@ -185,9 +193,10 @@ li{
     font-size: 3rem;
     @media (max-width:768px){
         font-size:2rem;
-        display:flex;
-        flex-wrap:block;
-        padding-right:2.5rem;
+        ${'' /* display:flex;
+        flex-wrap:block; */}
+        padding-right:1rem;
+        display:block;
     }
   }
     

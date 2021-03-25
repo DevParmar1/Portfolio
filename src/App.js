@@ -10,7 +10,7 @@ import styled from "styled-components";
 import About from "./containers/About";
 import Home from "./containers/Home";
 import Project from "./containers/Project";
-
+import Footer from "./containers/Footer";
 
 
 function App() {
@@ -33,6 +33,7 @@ function App() {
 
   
       </BrowserRouter>
+      <Footer />
     </Container>
 
   );
@@ -43,7 +44,7 @@ export default App;
 const Container = styled.div`
 
 display:grid;
-grid-template-rows:64px auto min-content;
+grid-template-rows: auto ;
 
 
 `

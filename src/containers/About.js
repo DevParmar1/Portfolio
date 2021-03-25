@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import AboutCard from "../components/AboutCard";
+import Profile from "../components/Profile";
 
 
 
@@ -14,7 +14,7 @@ function About() {
 
 <Content>
 
-<AboutCard />
+<Profile />
 
 
 </Content>

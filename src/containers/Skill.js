@@ -33,6 +33,8 @@ padding-bottom:2rem;
 
 @media (max-width:768px){
     display:block;
+    margin-bottom:9rem;
+    
 }
 
 `
@@ -40,6 +42,10 @@ const Animation = styled.div`
 flex:1;
 width:100%;
 height:auto;
+@media(max-width: 768px){
+    width:auto;
+    padding-top:2rem;
+}
 
 
 `

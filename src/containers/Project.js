@@ -1,14 +1,21 @@
 import React from 'react'
-import Header from "./Header";
+import styled from "styled-components";
+import ProjectCard from "../components/ProjectCard";
 
 function Project() {
     return (
         
-        <div>
-        <Header />
-           Project Page 
-        </div>
-    )
+        <Container>
+       <ProjectCard />
+        
+       </Container>
+           
+        
+    );
 }
 
 export default Project;
+
+const Container = styled.div `
+
+`

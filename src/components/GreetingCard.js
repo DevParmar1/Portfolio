@@ -30,9 +30,11 @@ display:flex;
 align-items:center;
 justify-content:center;
 
+
+
 @media (max-width : 768px){
     display:block;
- 
+  
 }
 
 `
@@ -40,7 +42,7 @@ const Animation = styled.div`
 flex:1;
 width:100%;
 height:auto;
-
+overflow:hidden;
 
 `
 

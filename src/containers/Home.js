@@ -18,9 +18,7 @@ function Home() {
 
             </Content>
 
-            <Footer>
-
-            </Footer>
+            
 
         </Container>
     );
@@ -29,8 +27,8 @@ function Home() {
 export default Home;
 
 const Container = styled.div`
-${'' /* 
-display:grid;
+
+${'' /* display:grid;
 grid-template-rows:64px auto min-content; */}
 
 
@@ -41,6 +39,6 @@ const Content = styled.div`
 
 `
 
-const Footer = styled.div`
-background:black
-`
+// const Footer = styled.div`
+// background:black
+// `
