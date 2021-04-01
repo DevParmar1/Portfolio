@@ -16,6 +16,10 @@ const skillSection = {
       fontAwesomeClassname: "fab fa-sass"
     },
     {
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
@@ -27,10 +31,7 @@ const skillSection = {
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
+    
     {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
@@ -38,6 +39,10 @@ const skillSection = {
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "mongoDB",
+      fontAwesomeClassname: "fas fa-leaf"
     },
     {
       skillName: "firebase",
@@ -74,28 +79,41 @@ const contactSection = {
 const projectSection = {
   Data: [
     {
-      name: "LinkedIn",
-      desc: "fab fa-linkedin",
-      class: "fab fa-github",
-      link: "https://www.linkedin.com/in/dev-p-118583b3"
+      name: "LetsChat",
+       desc: "A browser based group chat app built using React.js & Firebase",
+       class: "fab fa-github",
+       link: "https://github.com/DevParmar1/LetsChat"
+     
     },
     {
-      name: "LinkedIn",
-      desc: "fab fa-linkedin",
+      name: "Portfolio",
+      desc: "Portfolio site built using Reactjs",
       class: "fab fa-github",
-      link: "https://www.linkedin.com/in/dev-p-118583b3"
+      link: "https://github.com/DevParmar1/Portfolio"
     },
     {
-      name: "LinkedIn",
-      desc: "fab fa-linkedin",
+      name: "Blog-web-app",
+      desc: "Simple yet dynamic blog website made with bootstrap as frontend, node.js & express as backend, MongoDB as dbms.",
       class: "fab fa-github",
-      link: "https://www.linkedin.com/in/dev-p-118583b3"
+      link: "https://github.com/DevParmar1/Blog-Web-App"
     },
     {
-      name: "LinkedIn",
-      desc: "fab fa-linkedin",
+      name: "TodoList",
+      desc: "Dynamic todo list made with express & MongoDB",
       class: "fab fa-github",
-      link: "https://www.linkedin.com/in/dev-p-118583b3"
+      link: "https://github.com/DevParmar1/TodoList"
+    },
+    {
+      name: "Weather-App",
+      desc: "node app using weather api to show data based on search",
+      class: "fab fa-github",
+      link: "https://github.com/DevParmar1/WeatherProject"
+    },
+    {
+      name: "botApp",
+      desc: "basic echo bot chat app built using azure",
+      class: "fab fa-github",
+      link: "https://github.com/DevParmar1/botApp"
     }
   ]
 };

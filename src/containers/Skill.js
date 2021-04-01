@@ -3,21 +3,23 @@ import styled from "styled-components";
 import skills from "../assets/lottie/skills.json";
 import DisplayLottie from "../components/displayLottie/DisplayLottie";
 import SkillCard from "../components/SkillCard";
+import { Fade } from "react-reveal";
 
 function Skill() {
     return (
-        <Container>
-            
-          
-                
-           
-            <SkillCard />
-         
-            <Animation>
-          <DisplayLottie animationData={skills} />
-          </Animation>
-            
-        </Container>
+        <Fade left duration={2000} distance="40px">
+
+            <Container>
+
+                <SkillCard />
+
+                <Animation>
+                    <DisplayLottie animationData={skills} />
+                </Animation>
+
+            </Container>
+        </Fade>
+
 
     )
 }
@@ -30,6 +32,7 @@ align-items:center;
 justify-content:center;
 padding-top:10rem;
 padding-bottom:2rem;
+
 
 @media (max-width:768px){
     display:block;

@@ -1,15 +1,20 @@
 import React from 'react';
 import styled from "styled-components";
+import {Fade} from "react-reveal";
 
 import {projectSection} from "../containers/PortfolioData";
 
 function ProjectCard() {
     return (
+      
         <Container>
-
+ 
             {projectSection.Data.map((project,i)=>{
+              
                 return(
-                    <Card>
+                 
+                  <Card>
+                  <Fade bottom duration={2000} distance="50px">
                 <ProjectTitle>
                     <h1>{project.name}</h1>
                 </ProjectTitle>
@@ -28,14 +33,18 @@ function ProjectCard() {
               </li>
                   </ul>
                   </Icons>
-                
+                  </Fade> 
            </Card>
+         
+          
 
                 );
+               
             })}
-            
-
+          
+       
         </Container>
+        
     )
 }
 
@@ -49,8 +58,8 @@ const Container = styled.div`
   max-width: 90%;
   
   @media (max-width: 768px){
-  margin:auto 0;
-
+    margin:0 auto;
+    max-width:100%;
   }
 `
 
@@ -61,14 +70,15 @@ const Card = styled.div`
   margin-bottom: 3rem;
   padding: 0 2rem 2rem;
   border-radius: 3px;
-  border: solid 2px #fff;
+
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
-  background-color: pink;
+  background-color: #44318D;
   transition: all 100ms ease-in-out;
 @media (max-width: 768px){
-  margin-left:0.2rem;
-  padding-right:2.4rem;
   
+ margin:0 auto 3rem;
+  padding-right:2.4rem;
+
   
   }
 
@@ -77,7 +87,7 @@ const ProjectTitle = styled.div`
 
 h1 {
     display: inline-block;
-    border-bottom: .3rem solid black;
+   line-height:1;
     padding-bottom:1rem;
     ${'' /* transform: translateY(-1rem); */}
    
@@ -87,7 +97,7 @@ h1 {
   display: block;
   font-size: 1.5rem;
   @media (max-width:768px){
-   font-size:200%;
+   font-size:2rem;
 }
 `
 const ProjectDesc = styled.div`
@@ -141,7 +151,7 @@ ul{
 
 
 :hover{
-    color:red;
+    color:#D83F87;
     -webkit-animation: fa-spin 1s infinite linear;
   -moz-animation: fa-spin 1s infinite linear;
   -o-animation: fa-spin 1s infinite linear;

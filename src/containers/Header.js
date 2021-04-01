@@ -113,7 +113,7 @@ display:flex;
 align-items:center;
 position:relative;
 right:1;
-background:orange;
+background:#fff;
 
 
 
@@ -155,7 +155,7 @@ li{
   display:flex;
   padding-right:32px;
   cursor:pointer;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Permanent Marker', cursive;
     
     font-variant-ligatures: no-common-ligatures;
     -webkit-font-variant-ligatures: no-common-ligatures;

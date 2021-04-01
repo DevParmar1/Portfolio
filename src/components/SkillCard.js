@@ -7,10 +7,11 @@ function SkillCard() {
         <Container>
         <SkillHeading>
             <h1>
-                Skills
+                What do i do?
             </h1>
+            
         </SkillHeading>
-        
+        <p>CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK</p>
         
         {
             skillSection.softwareSkills.map((skills,i)=>{
@@ -22,7 +23,7 @@ function SkillCard() {
                 className="software-skill-inline"
                 name={skills.skillName}
               >
-                <i className={skills.fontAwesomeClassname}></i>
+               <a href={skills.href}><i className={skills.fontAwesomeClassname}></i></a> 
                 <p>{skills.skillName}</p>
               </li>
                   </ul>
@@ -47,12 +48,29 @@ export default SkillCard;
 
 const Container = styled.div`
 flex:1;
+margin-left:1.5rem;
 
+p{
+  font-size:1.5rem;
+  line-height:1;
+
+  @media(max-width:768px){
+  font-size:1rem;
+  line-height:1.5;
+  text-align:center;
+}
+}
+
+@media(max-width:768px){
+  margin:0 auto;
+}
 `
 
 const SkillHeading = styled.div `
 display:flex;
 justify-content:center;
+flex-direction:rows;
+color:#F2F2F2;
 `
 
 const Icons = styled.div`

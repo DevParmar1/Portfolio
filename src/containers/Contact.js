@@ -4,6 +4,7 @@ import DisplayLottie from "../components/displayLottie/DisplayLottie";
 import contact from "../assets/lottie/contact.json";
 import { useMediaQuery } from "react-responsive";
 import {contactSection} from "./PortfolioData";
+import {Fade} from "react-reveal";
 
 function Contact() {
 
@@ -14,85 +15,90 @@ function Contact() {
       console.log(isMobile);
 
     return (
-        <Container>
+      <Fade bottom duration={2000} distance="40px">
+ <Container>
             
-          {isMobile ? 
-          <div>
-          <GreetingText>
-            <h1>Contact Me!</h1>
-            <p><i class="fas fa-phone-alt"></i> +91-910441107</p>
-            <p>@devparmar37@gmail.com</p>
-            {
-            contactSection.ContactData.map((skills,i)=>{
-                return (
-                  <Icons>
-                  <ul>
-                  <li
-                key={i}
-                name={skills.name}
+            {isMobile ? 
+            <div>
+            <GreetingText>
+              <h1>Contact Me!</h1>
+              <p><i class="fas fa-phone-alt"></i> +91-910441107</p>
+              <p>@devparmar37@gmail.com</p>
+              {
+              contactSection.ContactData.map((skills,i)=>{
+                  return (
+                    <Icons>
+                    <ul>
+                    <li
+                  key={i}
+                  name={skills.name}
+                  
+                >
+                  <a href={skills.href} title={skills.name}> <i className={skills.class} /> </a>
+                 
+                </li>
+                    </ul>
+                    </Icons>
+                     
                 
-              >
-                <a href={skills.href} title={skills.name}> <i className={skills.class} /> </a>
-               
-              </li>
-                  </ul>
-                  </Icons>
-                   
-              
-            );
-                
-            })
-        }
-            </GreetingText>
-              <Animation>
-          <DisplayLottie animationData={contact} />
-          </Animation>
-          </div>
-          :
-          <BigContainer>
-          <Animation>
-          <DisplayLottie animationData={contact} />
-          </Animation>
-          <GreetingText>
-            <h1>Contact Me!</h1>
-            <p><i class="fas fa-phone-alt"></i> +91-91044110</p>
-            <p>@devparmar37@gmail.com</p>
-            {
-            contactSection.ContactData.map((skills,i)=>{
-                return (
-                  <Icons>
-                  <ul>
-                  <li
-                key={i}
-                name={skills.name}
-                
-              >
-                <a href={skills.href} title={skills.name}> <i className={skills.class} />  </a>
-               
-              </li>
-                  </ul>
-                  </Icons>
-                   
-              
-            );
-                
-            })
-        }
-            </GreetingText>
-            
-          </BigContainer>
-          
-          
+              );
+                  
+              })
           }
-            
-            
-          
+              </GreetingText>
+                <Animation>
+            <DisplayLottie animationData={contact} />
+            </Animation>
+            </div>
+            :
+            <BigContainer>
+            <Animation>
+            <DisplayLottie animationData={contact} />
+            </Animation>
+            <GreetingText>
+             
+              <span>DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</span>
+              <h1>Contact Me!</h1>
+              <p><i class="fas fa-phone-alt"></i> +91-910441107</p>
+              <p>@devparmar37@gmail.com</p>
+              {
+              contactSection.ContactData.map((skills,i)=>{
+                  return (
+                    <Icons>
+                    <ul>
+                    <li
+                  key={i}
+                  name={skills.name}
+                  
+                >
+                  <a href={skills.href} title={skills.name}> <i className={skills.class} />  </a>
+                 
+                </li>
+                    </ul>
+                    </Icons>
+                     
                 
+              );
+                  
+              })
+          }
+              </GreetingText>
+              
+            </BigContainer>
+            
+            
+            }
+              
+              
+            
+                  
+             
+              
            
-            
-         
-            
-        </Container>
+              
+          </Container>
+      </Fade>
+       
 
     )
 }
@@ -106,6 +112,7 @@ justify-content:center;
 padding-top:9rem;
 padding-left:10rem;
 width:80%;
+
 
 @media (max-width : 768px){
     display:block;
@@ -131,6 +138,11 @@ flex:1;
 text-align:center;
 padding-left:6rem;
 
+p{
+  text-align:center;
+  
+}
+
 i{
     :hover{
         color:red;
@@ -138,7 +150,9 @@ i{
 }
 
 @media (max-width:768px){
-  padding-right:1rem;
+  margin:0 auto;
+  padding-left:3rem;
+  
   top:0;
   padding-bottom:1rem;
     h1{
@@ -164,6 +178,7 @@ align-items:center;
 justify-content:center;
 width:90%;
 padding-bottom:9rem;
+
 
 `
 

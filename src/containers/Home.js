@@ -27,7 +27,7 @@ function Home() {
 export default Home;
 
 const Container = styled.div`
-
+background:#116466;
 ${'' /* display:grid;
 grid-template-rows:64px auto min-content; */}
 

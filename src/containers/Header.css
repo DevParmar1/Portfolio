@@ -18,6 +18,7 @@
     max-width: 100%;
     padding: 15px 20px;
     margin: 0px auto;
+    
   }
   
   .header ul {
@@ -66,7 +67,11 @@
     max-height: 0;
     transition: max-height 0.2s ease-out;
   }
-  
+
+  /* .menu :hover{
+background-color:black;
+  }
+   */
   /* menu icon */
   
   .header .menu-icon {

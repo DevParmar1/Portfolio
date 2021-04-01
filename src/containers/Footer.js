@@ -21,10 +21,11 @@ function Footer() {
 export default Footer;
 
 const Container=styled.div`
+background:#0B0C10;
 h1{
     margin:0 auto;
     font-size:1.5rem;
-    
+    color:#66FCF1;
 }
 
 display:flex;
@@ -32,5 +33,5 @@ display:flex;
 width:auto;
 height:min-content;
 align-items:center;
-padding:1rem  1rem;
+padding:2rem  1rem;
 `
