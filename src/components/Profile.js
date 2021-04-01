@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-// import page from "../assets/lottie/sleeping.json";
-// import DisplayLottie from "./displayLottie/DisplayLottie";
 import {Fade} from "react-reveal";
 import Me from "../assets/images/Me.jpg"
 
@@ -17,8 +15,7 @@ function Profile() {
 </I>
 
 <Content>
-<h1>I'm Dev, Currently pursuing btech from IIIT Vadodara</h1>
-{/* <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, ligula eget condimentum interdum, nisl turpis iaculis odio, id interdum lectus ligula ut nulla</span> */}
+<h1>I'm Dev, Currently pursuing B.tech from IIIT Vadodara</h1>
 </Content>
             
         </Container>
@@ -36,7 +33,7 @@ align-items:center;
 justify-content:center;
 padding-top:10rem;
 padding-bottom:10rem;
-${'' /* background-image: url("https://wallpapercave.com/wp/wp5196710.jpg"); */}
+
 
 @media (max-width : 768px){
     
@@ -46,24 +43,6 @@ padding-top:2rem;
 }
 
 `
-// const Animation = styled.div`
-// flex:1;
-// width:100%;
-// height:auto;
-
-// `
-
-// const Text = styled.div`
-// flex:1;
-// text-align:center;
-
-// ${'' /* h1{
-//     @media (max-width:768px){
-//     font-size:100px;
-// } */}
-// }
-
-// `
 
 const I=styled.div`
 flex:1;

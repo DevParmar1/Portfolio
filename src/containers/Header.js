@@ -113,7 +113,7 @@ display:flex;
 align-items:center;
 position:relative;
 right:1;
-background:#fff;
+background:#e4fbff;
 
 
 
@@ -128,10 +128,12 @@ const Name = styled.div`
 padding-left:0.7rem;
 padding-top:1.5rem;
 padding-bottom:1rem;
+color:#3B0048;
 font-family: "Agustina Regular";
     font-weight: bold;
     font-variant-ligatures: no-common-ligatures;
     -webkit-font-variant-ligatures: no-common-ligatures;
+
   
 
 ${'' /* @media (min-width: 768px) {
@@ -161,7 +163,7 @@ li{
     -webkit-font-variant-ligatures: no-common-ligatures;
 
   :hover{
-      color:white;
+      color:#7868e6;
   }
 
   ${'' /* @media (min-width: 768px) {

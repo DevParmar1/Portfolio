@@ -61,17 +61,17 @@ const contactSection = {
     {
       name: "GitHub",
       class: "fab fa-github",
-      href: ""
+      href: "https://github.com/DevParmar1"
     },
     {
       name: "facebook",
       class: "fab fa-facebook",
-      href: ""
+      href: "https://www.facebook.com/parmar.devraj.5/"
     },
     {
       name: "instagram",
       class: "fab fa-instagram",
-       href: ""
+       href: "https://instagram.com/firexfist"
     }
   ]
 };

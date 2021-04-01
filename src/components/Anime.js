@@ -9,7 +9,7 @@ import g from "../assets/media/onepiece.mp4";
 
 function Anime() {
     return (
-        <Fade>
+        <Fade right duration={2000} distance="400px">
         <Text>
         <h1>What do i like to do besides coding?</h1>
         
@@ -104,6 +104,9 @@ flex:1;
 text-align:center;
 padding-left:8rem;
 
+h1{
+    color:#802BB1;
+}
 span{
  font-size:1.5rem;
  line-height:1.3; 

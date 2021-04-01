@@ -21,6 +21,7 @@ function Contact() {
             {isMobile ? 
             <div>
             <GreetingText>
+            <span>DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</span>
               <h1>Contact Me!</h1>
               <p><i class="fas fa-phone-alt"></i> +91-910441107</p>
               <p>@devparmar37@gmail.com</p>
@@ -116,7 +117,7 @@ width:80%;
 
 @media (max-width : 768px){
     display:block;
-    padding-left:0;
+    padding-left:0.4rem;
     padding-top:0;
     
 }
@@ -128,7 +129,7 @@ width:100%;
 height:auto;
 
 @media (max-width : 768px){
-    padding-left:1.9rem;
+    padding-left:2.1rem;
  
 }
 `
@@ -137,6 +138,10 @@ const GreetingText = styled.div`
 flex:1;
 text-align:center;
 padding-left:6rem;
+
+span{
+ font-size:1.2rem;
+}
 
 p{
   text-align:center;
@@ -219,10 +224,10 @@ li{
 
 :hover{
     color:red;
-    -webkit-animation: fa-spin 1s infinite ;
-  -moz-animation: fa-spin 1s infinite ;
-  -o-animation: fa-spin 1s infinite ;
-  animation: fa-spin 1s infinite;
+    -webkit-animation: fa-spin 1s infinite linear ;
+  -moz-animation: fa-spin 1s infinite linear;
+  -o-animation: fa-spin 1s infinite linear;
+  animation: fa-spin 1s infinite linear;
 }
 
 

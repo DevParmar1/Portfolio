@@ -1,7 +1,7 @@
 import React from 'react';
 // import page from "../assets/lottie/sleeping.json";
 // import DisplayLottie from "./displayLottie/DisplayLottie";
-import { Roll } from "react-reveal";
+import { Fade } from "react-reveal";
 import styled from "styled-components";
 import g from "../assets/media/jett.mp4";
 
@@ -9,7 +9,7 @@ import g from "../assets/media/jett.mp4";
 
 function Game() {
     return (
-        <Roll>
+        <Fade left duration={2000} distance="900px">
       
         
       
@@ -30,7 +30,7 @@ function Game() {
                 </Content>
                 
             </Container>
-        </Roll>
+        </Fade>
 
 
     )
@@ -86,6 +86,10 @@ const Content = styled.div`
 flex:1;
 text-align:center;
 padding-right:8rem;
+
+h1{
+    color:#802BB1;
+}
 
 span{
  font-size:1.5rem;

@@ -38,7 +38,7 @@ const Container = styled.div`
 background-color:#19181A;
 color:#D1D7E0;
 h1{
-    color:#802BB1;
+   
 }
 
 

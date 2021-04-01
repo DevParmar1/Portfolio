@@ -6,6 +6,7 @@ import * as Scroll from 'react-scroll';
 import styled from "styled-components";
 import hello from "../assets/lottie/hello1.json";
 import DisplayLottie from "./displayLottie/DisplayLottie";
+import "./greetings.css";
 
 function GreetingCard() {
 
@@ -27,7 +28,7 @@ function GreetingCard() {
            
             <GreetingText>
             <Tada>
-            <h1>Hi all, I'm Dev</h1> 
+            <h1>Hi all <span className="wave-emoji">👋</span>, I'm Dev</h1> 
            </Tada>
            
             <p>A passionate Full Stack Software Developer 🚀 having an experience of designing and building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.</p>
@@ -105,6 +106,6 @@ Button{
     margin-right:2rem;
  
     @media(max-width:768px){
-        margin:0 auto;
+        margin:0 0.5rem;
     }
 `
