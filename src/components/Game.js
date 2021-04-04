@@ -9,17 +9,8 @@ import g from "../assets/media/jett.mp4";
 
 function Game() {
     return (
-        <Fade left duration={2000} distance="900px">
-      
-        
-      
-       
+        // <Fade left duration={2000} distance="900px">
             <Container>
-               
-
-            
-
-
             <I>
                     <video src={g} autoPlay loop muted playsInline width="500px"></video>
                 </I>
@@ -30,7 +21,7 @@ function Game() {
                 </Content>
                 
             </Container>
-        </Fade>
+        // </Fade>
 
 
     )

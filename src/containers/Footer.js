@@ -26,6 +26,8 @@ h1{
     margin:0 auto;
     font-size:1.5rem;
     color:#66FCF1;
+
+   
 }
 
 display:flex;
@@ -34,4 +36,6 @@ width:auto;
 height:min-content;
 align-items:center;
 padding:2rem  1rem;
+
+
 `

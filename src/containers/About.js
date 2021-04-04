@@ -3,29 +3,37 @@ import styled from "styled-components";
 import Profile from "../components/Profile";
 import Anime from "../components/Anime";
 import Game from "../components/Game";
-
+import {Fade} from "react-reveal";
 
 function About() {
     return (
 
 
-        <Container>
+<Container>
 
 
 
-            <Content>
+<Content>
+<Fade left duration={1500} distance="700px">
+    <Profile />
+    </Fade>
 
-                <Profile />
-                <Anime />
-                <Game />
+    <Fade left duration={1500} distance="700px">
+    <Anime />
+    </Fade>
+    
+    <Fade left duration={1500} distance="700px">
+    <Game />
+</Fade>
+</Content>
 
-            </Content>
 
 
 
 
+</Container>
 
-        </Container>
+      
 
 
     )

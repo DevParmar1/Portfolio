@@ -9,7 +9,7 @@ import g from "../assets/media/onepiece.mp4";
 
 function Anime() {
     return (
-        <Fade right duration={2000} distance="400px">
+        <Fade right duration={1500} distance="400px">
         <Text>
         <h1>What do i like to do besides coding?</h1>
         
