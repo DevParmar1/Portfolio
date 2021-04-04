@@ -1,7 +1,7 @@
 import React from 'react';
 // import page from "../assets/lottie/sleeping.json";
 // import DisplayLottie from "./displayLottie/DisplayLottie";
-import { Fade } from "react-reveal";
+
 import styled from "styled-components";
 import g from "../assets/media/jett.mp4";
 
@@ -9,7 +9,7 @@ import g from "../assets/media/jett.mp4";
 
 function Game() {
     return (
-        // <Fade left duration={2000} distance="900px">
+     
             <Container>
             <I>
                     <video src={g} autoPlay loop muted playsInline width="500px"></video>
@@ -21,7 +21,7 @@ function Game() {
                 </Content>
                 
             </Container>
-        // </Fade>
+        
 
 
     )
