@@ -7,7 +7,7 @@ import { Fade } from "react-reveal";
 
 function Skill() {
     return (
-        <Fade left duration={2000} distance="40px">
+        <Fade left duration={2000} distance="400px">
 
             <Container>
 

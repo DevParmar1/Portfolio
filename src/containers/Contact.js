@@ -15,7 +15,7 @@ function Contact() {
       console.log(isMobile);
 
     return (
-      <Fade bottom duration={2000} distance="40px">
+      <Fade bottom duration={2000} distance="100px">
  <Container>
             
             {isMobile ? 

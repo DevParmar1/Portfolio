@@ -17,7 +17,6 @@
     "react-headroom": "^3.1.0",
     "react-lottie": "^1.2.3",
     "react-responsive": "^8.2.0",
-    "react-reveal": "^1.2.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-router-hash-history": "git+https://github.com/ymzuiku/react-router-hash-history.git",
@@ -49,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-reveal": "^1.2.2"
   }
 }

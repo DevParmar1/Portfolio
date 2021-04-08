@@ -64,6 +64,7 @@ const Container = styled.div`
 `
 
 const Card = styled.div`
+position:relative;
  flex:1 0 21%;
  text-align: center;
   max-width: 20rem;
@@ -90,6 +91,7 @@ h1 {
    line-height:1;
     padding-bottom:1rem;
     ${'' /* transform: translateY(-1rem); */}
+    font-family: 'RocknRoll One', sans-serif;
    
 }
   margin:2rem auto;
@@ -103,7 +105,8 @@ h1 {
 const ProjectDesc = styled.div`
  font-size: 90%;
   margin: 1rem auto 0 auto;
-  padding-top:4.5rem;
+  padding-top:1rem;
+  padding-bottom:9rem;
   letter-spacing: 0.33px;
   max-width: 15rem;
 `
@@ -115,9 +118,16 @@ const ProjectDesc = styled.div`
 // `
 
 const Icons = styled.div`
+position:absolute;
+bottom:0;
+left:0;
+right:0;
 display:inline-block;
 margin:0 auto;
 
+@media(max-width:768px){
+  position:relative;
+}
 ul{
     padding:0;
     li{
@@ -138,7 +148,7 @@ ul{
     font-size: 3rem;
 
     @media (max-width:768px){
-        font-size:2rem;
+        font-size:2.5rem;
         display:flex;
         flex-wrap:block;
         padding-right:2.5rem;

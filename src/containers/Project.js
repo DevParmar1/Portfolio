@@ -5,18 +5,17 @@ import ProjectCard from "../components/ProjectCard";
 
 function Project() {
     return (
-      
-        <Container>
-       <ProjectCard />
-        
-       </Container>
 
-        
+        <Container>
+            <ProjectCard />
+        </Container>
+
+
     );
 }
 
 export default Project;
 
-const Container = styled.div `
+const Container = styled.div`
 background:#2A1B3D
 `

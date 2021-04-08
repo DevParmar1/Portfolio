@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {Fade} from "react-reveal";
+import { Fade } from "react-reveal";
 import Me from "../assets/images/Me.jpg"
 
 
@@ -8,19 +8,19 @@ import Me from "../assets/images/Me.jpg"
 function Profile() {
     return (
         <Fade>
-<Container>
+            <Container>
 
-<I>
-    <img src={Me} alt="Dev" />
-</I>
+                <I>
+                    <img src={Me} alt="Dev" />
+                </I>
 
-<Content>
-<h1>I'm Dev, Currently pursuing B.tech from IIIT Vadodara</h1>
-</Content>
-            
-        </Container>
+                <Content>
+                    <h1>I'm Dev, Currently pursuing B.tech from IIIT Vadodara</h1>
+                </Content>
+
+            </Container>
         </Fade>
-        
+
 
     )
 }
@@ -44,7 +44,7 @@ padding-top:2rem;
 
 `
 
-const I=styled.div`
+const I = styled.div`
 flex:1;
 
 img{
@@ -74,7 +74,7 @@ padding-right:8rem;
 }
 h1{
     line-height:1.3;
-    color:#4056A1;
+    color:#eeebdd;
     
     @media(max-width:768px){
     
