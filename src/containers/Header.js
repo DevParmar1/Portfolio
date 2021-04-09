@@ -17,22 +17,14 @@ function Header() {
   });
 
   const routeChange1 = () => {
-    console.log("yes clicked");
-
     history.push("/");
   }
 
   const routeChange2 = () => {
-    console.log("yes clicked");
-
-
-    history.push("/project");
+  history.push("/project");
   }
 
   const routeChange3 = () => {
-    console.log("yes clicked");
-
-
     history.push("/about");
   }
 
@@ -66,7 +58,7 @@ function Header() {
           </label>
           <ul className="menu">
             <li onClick={routeChange1}>Home</li>
-            <li onClick={routeChange2}>Project</li>
+            <li onClick={routeChange2}>Projects</li>
             <li onClick={routeChange3}>About</li>
           </ul>
         </header>
