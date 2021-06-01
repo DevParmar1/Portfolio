@@ -23,7 +23,7 @@ function Contact() {
             <GreetingText>
             <span>DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</span>
               <h1>Contact Me!</h1>
-              <p><i class="fas fa-phone-alt"></i> +91-910441107</p>
+              <p><i class="fas fa-phone-alt"></i> +91-9104441107</p>
               <p>@devparmar37@gmail.com</p>
               {
               contactSection.ContactData.map((skills,i)=>{
@@ -60,7 +60,7 @@ function Contact() {
              
               <span>DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</span>
               <h1>Contact Me!</h1>
-              <p><i class="fas fa-phone-alt"></i> +91-910441107</p>
+              <p><i class="fas fa-phone-alt"></i> +91-9104441107</p>
               <p>@devparmar37@gmail.com</p>
               {
               contactSection.ContactData.map((skills,i)=>{
